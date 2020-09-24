@@ -1,0 +1,86 @@
+.no-bullet {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contacts-refs {
+    background: #3A40E8;
+    color: white;
+    
+}
+
+body {
+    display: grid;
+    grid-template-columns: 265px 1fr;
+    grid-template-rows: auto;     
+    margin: 0;  
+}
+
+.left {
+    grid-column: 1 / 2;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.right {
+    grid-column: 2/3;
+    color:  #3A40E8;
+    background: #ECECEC;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.left-pad {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.flex {
+    display: flex;
+}
+
+.width {
+    max-width: 300px;
+}
+
+
+
+#headline {
+    font-size: 70px;
+    margin: 0;
+}
+
+#top {
+    border-bottom: solid blue 3px;
+}
+
+#magnate {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.sub-head {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section-header {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+ul, p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
