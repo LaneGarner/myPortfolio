@@ -46,7 +46,9 @@ h1, h2 {
     max-width: 300px;
 }
 
-
+.small-width {
+    max-width: 150px;
+}
 
 #headline {
     font-size: 70px;
@@ -68,6 +70,7 @@ h1, h2 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 0;
+    padding-bottom: 0;
 }
 
 .section-header {
@@ -83,4 +86,20 @@ ul, p {
 a {
     text-decoration: none;
     color: white;
+}
+
+.top-pad {
+    padding-top: 40px;
+}
+
+.university {
+    margin-right: 20px;
+}
+
+.title {
+    margin-right: 50px;
+}
+
+li {
+    padding-left: 0;
 }
