@@ -170,9 +170,6 @@ h2 {
   text-align: center;
 }
 
-.social h1 {
-  text-align: center;
-}
 
 @media (max-width: 576px) {
   nav {
@@ -183,6 +180,7 @@ h2 {
 
 @media (max-width: 768px) {
   header {
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
