@@ -11,14 +11,16 @@ body {
 
 .logo {
   width: 100px;
-  height: auto;
+  /* height: auto; */
   margin: 3% 10%;
 }
 
 header {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* grid-template-columns: 40% 60%; */
+  /* width: 100%; */
 }
 
 .main {
@@ -28,9 +30,10 @@ header {
   grid-template-columns: 30% 40% 30%; */
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   animation-name: main;
   animation-duration: 4s;
 }
@@ -41,8 +44,9 @@ header {
 }
 
 nav > a {
-  margin: 8% 10%;
-  height: 10%;
+  margin: 15px;
+  /* margin: 8% 10%; */
+  height: 12%;
   /* width: 15%; */
   color: #333;
   font-size: 16px;
@@ -69,11 +73,11 @@ nav > a:hover {
 nav {
   display: flex;
   align-content: center;
-  width: 100%;
-  /* padding-right: 2%; */
+  /* width: 100%; */
+  padding-right: 2%;
 }
 
-#profile-pic {
+.profile-pic {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -86,9 +90,9 @@ nav {
 .header-text {
   font-size: 3em;
   color:white;
-  grid-column: 2/3;
-  margin: 3% auto;
-  border-bottom: 2px dotted #403940;;
+  /* grid-column: 2/3; */
+  margin-top: 3%;
+  border-bottom: 2px dotted #403940;
   text-shadow: 2px 2px #333;
 }
 
@@ -106,7 +110,7 @@ h2 {
 }
 
 .my-button {
-  grid-column: 2/3;
+  /* grid-column: 2/3; */
   margin: 3% auto;
   width: auto;
   height: auto;
@@ -124,10 +128,10 @@ h2 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#copyright {
+.copyright {
   grid-column: 2/3;  
   text-align: center;
-  margin: 20px; 
+  margin: 20px;
 }
 
 #portfolio {
@@ -164,5 +168,23 @@ h2 {
 
 .page-header {
   text-align: center;
+}
+
+.social h1 {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
