@@ -58,16 +58,17 @@ nav > a {
   text-decoration: none;
 }
 
-nav > a:hover {
-  background: #333;
-  color: white;
-}
 
 .has-border {
   border-radius: 6px;
   border: 2px solid #403940;
   background: none;
   padding: 10px;
+}
+
+nav > a:hover, .active {
+  background: #333;
+  color: white;
 }
 
 nav {
@@ -185,4 +186,3 @@ h2 {
     flex-direction: column;
   }
 }
-

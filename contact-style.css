@@ -1,0 +1,55 @@
+form div {
+    margin: 1em;
+  }
+
+.form-content {
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(85,85,85,1) 24%, rgba(136,136,136,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: main;
+  animation-duration: 4s;
+}
+  
+  form label, form p {
+    color: white;
+    margin-bottom: .5em;
+  }
+
+  form p {
+      border-bottom: solid 1px #333;
+  }
+  
+  button {
+    background: #F9C241;
+    color: #333;
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  button:nth-of-type(2) {
+    background: #f9c24196;
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type='checkbox'], input[type='radio'] {
+    margin: 1em;
+  }
+
+  @media (max-width: 576px) {
+    form label, form p, button {
+        font-size: 20px;
+      }
+      .submit-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+  }
