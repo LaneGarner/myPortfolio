@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resume-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@300;700&display=swap"
-        rel="stylesheet">
+    
     <title>Elon Musk Resume</title>
 </head>
 
 <body>
-
-    <!-- <section class="left">
-        <img src="images/musk.jpg" alt="Elon musk profile pic" id="profile-pic">
-    </section> -->
-
     <section id="contacts-refs" class="left">
         <section>
-            <img src="images/musk.jpg" alt="Elon musk profile pic" id="profile-pic">
+            <img src="images/musk.jpg" alt="Elon musk profile pic" id="profile-pic" onmouseover="picFade()" >
         </section>
 
         <section class="left-pad">
             <h1 class="section-header">Contact Details</h1>
             <ul class="no-bullet">
+                <div onclick="phoneNumber()">
+                <li id="phone" class="no-bullet">555-555-5555</li>
+                </div>
                 <li class="no-bullet">Tesla HQ Address: 3500 Deer Creek Road, Palo Alto, CA 94304</li>
                 <li class="no-bullet">Email: <a href="elon@teslamotors.com">elon@teslamotors.com</a></li>
                 <li class="no-bullet">Portfolio: <a href="https://www.spacex.com/">spaceX.com</a></li>
@@ -50,16 +50,14 @@
     <section class="right">
 
         <section class="right" id="top">
-            <h1 id="headline">Elon<br>Musk</h1>
+            <h1 id="headline" onclick="nameFade()">Elon<br>Musk</h1>
             <p class="item" id="magnate">Business magnate</p>
         </section>
 
         <section class="flex">
             <section class="width">
                 <h1 class="section-header">Personal<br> Summary</h1>
-                <p>I am the third richest person in the world and have founded/co-founded seven companies.
-                    My
-                    overarching goal is to get humanity to Mars and everthing I do is in the name of that goal.</p>
+                <p>I am the third richest person in the world and have founded/co-founded seven companies. My overarching goal is to get humanity to Mars and everthing I do is in the name of that goal.</p>
             </section>
 
             <section>
@@ -148,7 +146,7 @@
     </section>
 
 
-
+    <script src="resume-interactive.js"></script>
 
 </body>
 

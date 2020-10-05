@@ -101,5 +101,9 @@ a {
 }
 
 li {
-    padding3-left: 0;
+    padding-left: 0;
+}
+
+#phone {
+    visibility: hidden;
 }
